@@ -8,7 +8,7 @@ The model for an individual landmark.
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     fileprivate var imageName: String
@@ -43,6 +43,6 @@ struct Coordinates: Hashable, Codable {
 
 struct Landmark_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        Text("Hello World!")
     }
 }
